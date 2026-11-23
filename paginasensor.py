@@ -22,7 +22,7 @@ import streamlit as st
 # Si despliegas el proyecto, puedes cambiarlos desde Secrets/variables de entorno.
 BROKER_IP = os.getenv("MQTT_BROKER", "broker.hivemq.com")
 BROKER_PORT = int(os.getenv("MQTT_PORT", "1883"))
-TOPIC = os.getenv("MQTT_TOPIC", "esp32/temperatura/tarjeta1")
+TOPIC = os.getenv("MQTT_TOPIC", "esp32/temperatura/general")
 MQTT_USERNAME = os.getenv("MQTT_USERNAME", "")
 MQTT_PASSWORD = os.getenv("MQTT_PASSWORD", "")
 MQTT_TLS = os.getenv("MQTT_TLS", "false").lower() in ("1", "true", "yes")
